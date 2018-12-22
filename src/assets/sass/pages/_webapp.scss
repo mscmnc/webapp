@@ -1,0 +1,156 @@
+.webapp {
+    height: 100vh;
+    background-image: linear-gradient(rgba($color-dark-blue, 0.8), rgba($color-dark-blue, 0.8)), url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem;
+
+        &-header {
+
+            @include respond(tab) {
+                padding-bottom: 1.5rem;
+            }
+                form {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 3rem;
+                    height: 3rem;
+
+                        @include respond(laptop) {
+                            height: 1.5rem;
+                            margin-bottom: 1.5rem;
+                        }
+
+                        @include respond(tab) {
+                            flex-direction: column;                            
+                        }
+                }
+
+                
+                &--search {
+                    width: 60%; 
+
+                        @include respond(tab) {
+                            width: 100%;
+                        }
+                    
+                        & input {
+                            width: 100%;
+                            letter-spacing: 1px;
+                            height: 3rem;
+                            border: 1px solid $color-grey;
+                            border-radius: 0.2rem;
+                            background-color: rgba($color-white, 0.1);
+                            padding-left: 0.5rem;
+                            color: $color-white;
+                            text-transform: uppercase;
+
+                                @include respond(laptop) {
+                                    height: 1.5rem;
+                                }
+                        }
+                }
+
+                &--buttons {
+                    width: 35%;
+                    display: flex;
+                    justify-content: space-between;
+
+                        @include respond(tab) {
+                            width: 100%;
+                            margin-top: 0.5rem;
+                        }
+                }
+        }
+
+        &-bottom {
+            display: flex;
+            height: 80%;
+            justify-content: space-between;
+
+                @include respond(tab) {
+                    flex-direction: column;                            
+                }
+
+                &-imageGrid {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    width: 60%;
+                    border: 1px $color-grey solid;
+                    border-radius: 0.2rem;
+                    overflow-y: scroll;
+                    padding-top: 1rem;
+
+                        @include respond(tab) {
+                            order: 2;
+                            width: 100%;                         
+                        }
+
+                        &--noImg {
+                            margin: auto;
+                            text-align: center;
+                        }
+
+                        &-img {                        
+                            width: 20%;
+                            margin: 0.5rem;
+                            height: auto;
+                            color: $color-white;
+                            font-size: 0.6rem;
+                            text-align: center;
+                            font-weight: 500; 
+
+                                @include respond(tab) {
+                                    width: 25%;                         
+                                }
+
+                                & img {
+                                    width: 100%;
+                                    display: block;
+                                    margin-bottom: 0.3rem;  
+                                }
+
+                                & a {
+                                    color: $color-white;
+                                    
+                                    @include respond(laptop) {
+                                        font-size: 0.5rem;
+                                    }
+                                }
+                        }
+                }
+
+                &-queries {
+                    width: 35%;
+
+                    @include respond(tab) {
+                        order: 1;
+                        width: 100%;
+                    }
+
+                    & li {
+                        list-style: none;
+                        text-align: center;                        
+                        color: $color-white; 
+                        border: 1px $color-grey solid;
+                        border-radius: 0.2rem;
+                        margin-bottom: 0.5rem;
+
+                        &:hover {                           
+                            cursor: pointer;                            
+                            background-color: rgba($color-white, 0.1);
+                        }
+                        
+                    }
+
+                }      
+
+        }
+
+}
+
+
+

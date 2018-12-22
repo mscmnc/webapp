@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;    
+    box-sizing: border-box;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-white;
+    
+        @include respond(tab) {
+            font-size: 0.7rem;
+        }
+
+        @include respond(laptop) {
+            font-size: 0.85rem;
+        }
+}
+

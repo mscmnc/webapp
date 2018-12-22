@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    width: 10px;
+
+        &-track-piece {
+            background-color: rgba($color-white, 0.4);
+            border-radius: 6px;
+        }
+
+        &-thumb:hover {
+            background: #555; 
+        }
+}
+
