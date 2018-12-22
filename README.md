@@ -25,10 +25,6 @@ If you already have your API.
 ```
 REACT_APP_API_KEY=your_api_key
 ```
-- Access the API key via the process.env object. Add you API in to store>>actions>>search.js. 
-```
-const API_KEY = `${process.env.REACT_APP_API_KEY}`;
-```
 
 
 Good luck! :)
