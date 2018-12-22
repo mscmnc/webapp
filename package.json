@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
     "compile:sass": "node-sass src/assets/sass/main.scss src/assets/css/main.css -w --output-style expanded",
     "prefix": "postcss --use autoprefixer -b \"last 10 versions\" src/assets/css/main.css -o src/assets/css/main.prefix.css",
