@@ -1,5 +1,5 @@
 ## WebApp. Image search application powered by [unsplash.com API](https://unsplash.com/developers) 
-This is one page web application created with ReactJS, Redux.
+This is one page web application created with HTML5, CSS3, SASS, ES6, ReactJS, Redux.
 
 ## How to use?
  - Type your keyword.
