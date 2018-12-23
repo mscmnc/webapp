@@ -1,6 +1,9 @@
 // 1em = 16px
 @mixin respond($breakpoint) {
 
+    @if $breakpoint == phone {
+        @media ( max-width: 25em) { @content }; // 400px 
+    }
     @if $breakpoint == tab {
         @media ( max-width: 35.99875em) { @content }; // bootstrap size 575.98px
     }

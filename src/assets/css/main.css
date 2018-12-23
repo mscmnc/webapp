@@ -193,6 +193,12 @@ body {
   }
 }
 
+@media (max-width: 25em) {
+  .webapp-bottom-imageGrid-img {
+    width: 90%;
+  }
+}
+
 .webapp-bottom-imageGrid-img img {
   width: 100%;
   display: block;
