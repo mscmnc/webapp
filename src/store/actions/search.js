@@ -36,7 +36,7 @@ export const getRandom = () => {
         }).then( response => {
             dispatch(searchSuccess(response.data));
         }).catch( error => {
-            dispatch(searchFail());
+            dispatch(searchFail(error));
         })
 
     } 
@@ -51,10 +51,9 @@ export const getResultsBySearch = (query) => {
             url: 'https://api.unsplash.com/search/photos/?client_id='+API_KEY,
             params: {'per_page': '12', orientation: 'landscape', query: query }
         }).then( response => {
-            console.log('Lietuva');
             dispatch(searchSuccess(response.data.results));
         }).catch( error => {
-            dispatch(searchFail());
+            dispatch(searchFail(error));
         })
 
     }

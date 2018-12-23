@@ -5,7 +5,8 @@ const initialState = {
     data: null,
     query: null,
     loading: true,
-    savedQuery: []
+    savedQuery: [],
+    error: null
 };
 
 const reducer = (state = initialState, action) => {
@@ -24,7 +25,8 @@ const reducer = (state = initialState, action) => {
         case actionTypes.SEARCH_FAIL:
             return {
                 ...state,
-                error: action.error
+                error: action.error,
+                loading: false
             };
         case actionTypes.SAVE_QUERY:
         return {

@@ -39,3 +39,14 @@ button {
             opacity: 1;
         }
 }
+
+.navigation-next,
+.navigation-back {
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    
+        & svg {
+            cursor: pointer;
+        }
+}

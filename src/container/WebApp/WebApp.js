@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import '../../assets/css/main.css';
+import '../../assets/css/style.css';
 import * as searchActions from '../../store/actions/index';
 import Search from '../../components/Search/Search';
 

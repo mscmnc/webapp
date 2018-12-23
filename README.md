@@ -1,12 +1,12 @@
 ## WebApp. Image search application powered by [unsplash.com API](https://unsplash.com/developers) 
-This is one page web application created with HTML5, CSS3, SASS, ES6, ReactJS, Redux.
+This is one page web application created with HTML5, CSS3, SASS, ES6, ReactJS, Redux and BEM.
 
 ## How to use?
  - Type your keyword.
  - Click SEARCH or SAVE.
 
 You can save and delete your keywords from queries list. 
-Click on queries and search will starts automatically. If there is no letters, buttons are disabled. 
+Click on queries and search will start automatically. If there is no entered information in search field, buttons are disabled. 
 
 ### Live demo here: [webApp](https://mscmnc.github.io/webapp)
 
