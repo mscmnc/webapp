@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     padding: 3rem;
 
+        @include respond(tab) {
+            padding: 1rem;
+        }
+
         &-header {
 
             @include respond(tab) {
@@ -19,7 +23,7 @@
 
                         @include respond(laptop) {
                             height: 1.5rem;
-                            margin-bottom: 1.5rem;
+                            margin-bottom: 1.5rem;                            
                         }
 
                         @include respond(tab) {
@@ -29,7 +33,11 @@
 
                 
                 &--search {
-                    width: 60%; 
+                    width: 60%;
+                    
+                        @include respond(laptop) {
+                            width: 70%;                        
+                        }
 
                         @include respond(tab) {
                             width: 100%;
@@ -56,6 +64,10 @@
                     width: 35%;
                     display: flex;
                     justify-content: space-between;
+
+                        @include respond(laptop) {
+                            width: 25%;                        
+                        }
 
                         @include respond(tab) {
                             width: 100%;
@@ -84,10 +96,15 @@
                     overflow-y: scroll;
                     padding-top: 1rem;
 
+                        @include respond(laptop) {
+                            width: 70%;                        
+                        }
+
                         @include respond(tab) {
                             order: 2;
                             width: 100%;                         
                         }
+                        
 
                         &--noImg {
                             margin: auto;
@@ -102,6 +119,10 @@
                             font-size: 0.6rem;
                             text-align: center;
                             font-weight: 500; 
+
+                                @include respond(laptop) {
+                                    width: 40%;                        
+                                }
 
                                 @include respond(tab) {
                                     width: 45%;                         
@@ -131,6 +152,10 @@
 
                 &-queries {
                     width: 35%;
+
+                    @include respond(laptop) {
+                        width: 25%;                        
+                    }
 
                     @include respond(tab) {
                         order: 1;

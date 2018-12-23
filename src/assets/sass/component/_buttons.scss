@@ -35,6 +35,10 @@ button {
     margin: 0.3rem 0.3rem 0 0;
     opacity: .5;
 
+        @include respond(laptop) {
+            margin: 0.15rem 0.15rem 0 0;                       
+        }
+
         &:hover {
             opacity: 1;
         }
