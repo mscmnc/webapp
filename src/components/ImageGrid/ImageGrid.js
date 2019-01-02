@@ -6,7 +6,7 @@ import Spinner from '../../components/Spinner/Spinner';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import NavigationArrows from '../Button/NavigationArrows/NavigationArrows';
 
-class ImageGrid extends Component {
+export class ImageGrid extends Component {
 
     render () {
         let images = <Spinner />;
